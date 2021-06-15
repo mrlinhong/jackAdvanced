@@ -193,4 +193,6 @@ public interface RedisService {
 
     public Set<Object> zRangeByScore(String key,double scoure,double scoure1);
 
+
+
 }
