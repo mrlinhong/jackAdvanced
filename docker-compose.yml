@@ -27,7 +27,7 @@ services:
     container_name: jackadvanced-docker-compose
     # 指定服务运行的端口
     ports:
-      - 8085:8080
+      - 8085:8085
     # 指定容器中需要挂载的文件
     volumes:
       - /etc/localtime:/etc/localtime
