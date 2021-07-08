@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @TableName("user")
@@ -22,9 +23,9 @@ public class User {
 
     private String openid;
 
-    private LocalDateTime gmtCreate;
+    private Date gmtCreate;
 
-    private LocalDateTime gmtModified;
+    private Date gmtModified;
 
     private Integer deleted;
 
