@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.jack.jackAdvanced.mapper.TjksMapper">
+    <select id="listTjks" resultType="com.jack.jackAdvanced.domain.entity.TjksEntity">
+        select * from tb_tjks
+    </select>
+    <insert id="save" parameterType="com.jack.jackAdvanced.domain.entity.TjksEntity">
+        insert into tb_tjks (name,address,age) values (#{name},#{address},#{age})
+    </insert>
+
+</mapper>
