@@ -22,4 +22,9 @@ public class TjksEntity {
     private String address;
     private Integer age;
 
+    public TjksEntity(String name, String address, Integer age) {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+    }
 }
