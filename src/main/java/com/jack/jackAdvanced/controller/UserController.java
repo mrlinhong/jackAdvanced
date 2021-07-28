@@ -44,6 +44,8 @@ public class UserController {
     public Result save(){
         User u = User.builder().username("jack").deleted(1).address("nanjing").openid(UUID.fastUUID().toString().substring(0,5)).gmtCreate(new Date()).gmtModified(new Date()).build();
         userService.save(u);
+
+        System.out.println("1111");
         return Result.success(JSONUtil.toJsonStr(u));
     }
 
